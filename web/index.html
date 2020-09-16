@@ -1,57 +1,64 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sistema de Login</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- vinculo a bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Temas-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- se vincula al hoja de estilo para definir el aspecto del formulario de login-->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="css/default.css" rel="stylesheet" type="text/css"/>
-</head>
-<body background="css/media/fondo-.jpg" style="background-repeat: inherit ; background-position: inherit;">
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo</title>
+        <link href="css/default.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="contenedor"> 
+            <div id="cabecera"> 
+                Compilador ES6
+                <dialog style="float: right"style="align-content: center" id="ms">
+                    <p style="font: 12pt sans-serif" style="float: right">
+                    <h3>Nuestros datos.</h3>
+                    <h4 style="font-weight: bold">Integrantes:<br></h4>
+                    Viviana Villalobos Soto<br>
+                    Joel Aguero Campos<br>
+                    Carlos Chacón Vargas<br>
+                    Miguel Sanchez Sanchez<br>
+                    <br>
+                    Código: 50059<br>
+                    Curso: Paradigmas de Programación<br>
+                    Versión: 01<br>
+                    Fecha: 05/09/2020<br>
+                    <br>
+                    <h4 style="font-weight: bold">Repositorio:<br></h4>
+                    <nav>
+                        <ul><li><a href="https://github.com/joelaguer14/ENANO2020G02.git" style="font: 12pt sans-serif">https://github.com/joelaguer14/ENANO2020G02.git</a></li></ul>
+                    </nav>
+                    </p>
+                    <button  class="btn btn-default" type="button" id="close" onclick="document.getElementById('ms').close()"><span class="glyphicon"></span>Listo</button>
+                </dialog>
+                <p > 
+                    <button class="btn btn-default" type="button"  id="show" onclick="document.getElementById('ms').show()" style="align-items: center"><span class="glyphicon"></span>About</button>
+                </p>
+               
+            </div> 
+            <div id="cuerpo"> 
+                <div id="lateral">
+                    <p><textarea style="max-width: 665px" name="descripcion" cols="70" rows="20"></textarea></p>
 
 
-<div id="Contenedor">
-    <div class="Icon">
-        <!--Icono de usuario-->
-        <span class="glyphicon glyphicon-user"></span>
-    </div>
-    <div class="ContentForm">
-        <form action="compilador.html" method="post" name="FormEntrar">
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input type="correo" class="form-control" name="correo" placeholder="Nombre de usuario" id=""
-                       aria-describedby="sizing-addon1" required>
-            </div>
-            <br>
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
-                <input type="password" name="contra" class="form-control" placeholder="******"
-                       aria-describedby="sizing-addon1" required>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-primary btn-block btn-signin" id="IngresoLog" type="submit" >Entrar</button>
-            <div class="opcioncontra"><a href="about1.html">About</a></div>
-        </form>
-    </div>
-</div>
-</body>
-<!-- vinculando a libreria Jquery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Libreria java scritp de bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+                   
+                    <div class="col-sm-12 col-xs-12">
+                        <button style="float: right"class="btn btn-default" type="button"><span class="glyphicon"></span>&nbsp;Submit</button>
+                        <button style="float: right" class="btn btn-default" type="button">Clear&nbsp;<span class="glyphicon"></span></button>
+                    </div>
+                    
+                </div>
+                <div id="otrolado"> 
+                    <p><textarea style="max-width: 665px"   name="descripcion" cols="70" rows="20"></textarea></p>
+                <button style="float: right" class="btn btn-default" type="button">Clear&nbsp;<span class="glyphicon"></span></button>
+                </div> 
+
+            </div> 
+            <div id="pie"> 
+                © 2020 Grupo 02, 01pm 
+            </div> 
+        </div>
+    </body>
 </html>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
